@@ -2,15 +2,17 @@ export default function LandingPage() {
     return (
         <div className="w-100 flex justify-center py-10">
             <div className="w-2/3 text-2xl text-center leading-10 font-bold text-slate-700">
-                Welcome to Internship-Palooza, the one-stop-shop for all your internship searching needs!
+                Welcome to InternShips!
                 <br />
-                Are you tired of scrolling through boring job listings and reading through dry descriptions? Look no further, because Internship-Palooza is here to save the day!
+                Are you ready to set sail on a journey of career discovery? Look no further than InternShips, the ultimate destination for interns looking to navigate the rough seas of the job market.
                 <br />
-                Our site is jam-packed with exciting internships from top companies, all curated by our team of experts who have a knack for finding the best of the best.
+                Our site is fully-loaded with exciting internship opportunities for all majors and levels of experience. Whether you're a seasoned pro looking for your next adventure or a fresh-faced recruit just starting out, we've got something for you.
                 <br />
-                Are you looking for a chance to work with cutting-edge technology? We've got you covered! Want to make a difference in the world with a socially conscious company? No problem!
+                Our unique matching system will help you find the perfect internship to suit your skills and interests. And with our extensive network of top-notch employers, you're sure to find a position that will help you climb the corporate ladder.
                 <br />
-                So why waste your time with other internship search sites when you can have all the fun at Internship-Palooza? Sign up now and let the good times roll!
+                So why wait? Sign up now and start exploring the high seas of opportunity with InternShips!
+                <br />
+                "Intern-ship happens, but intern-sail with us and you'll land your dream job"
             </div>
         </div>
     )

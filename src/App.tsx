@@ -5,6 +5,12 @@ import Header from './components/Header';
 import LandingPage from './pages/Landing';
 import SignInPage from './pages/SignIn';
 import SignUpPage from './pages/SignUp';
+import AddListingPage from './pages/AddListing';
+import InternshipsPage from './pages/Internships';
+import InternshipPage from './pages/Internship';
+import MyApplicationsPage from './pages/MyApplications';
+import MyListingsPage from './pages/MyListings';
+import GenerateCVPage from './pages/GenerateCV';
 
 export default function App() {
     const { user, setUser } = useContext(UserContext);
@@ -22,9 +28,14 @@ export default function App() {
             <Router>
                 <Header />
                 <Routes>
-                    <Route path="/" element={user ? user.type === 'applicant' ? <LandingPage /> : <LandingPage /> : <LandingPage />} />
+                    <Route path="/" element={user ? user.type === 'applicant' ? <InternshipsPage /> : <MyListingsPage /> : <LandingPage />} />
                     <Route path="/signIn" element={<SignInPage />} />
                     <Route path="/signUp" element={<SignUpPage />} />
+                    <Route path="/addListing" element={<AddListingPage />} />
+                    <Route path="/internship/:id" element={<InternshipPage />} />
+                    <Route path="/myApplications" element={<MyApplicationsPage />} />
+                    <Route path="/myListings" element={<MyListingsPage />} />
+                    <Route path="/genCV" element={<GenerateCVPage />} />
                 </Routes>
             </Router>
         </>
